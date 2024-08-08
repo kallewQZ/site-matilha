@@ -1,0 +1,290 @@
+html {
+	color: #fff;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0 auto;
+	max-width: 1500px;
+	background: linear-gradient(150deg, #000, #0f0e0f);
+	font-family: "Kanit", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+	background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+}
+
+.logo .imagem {
+	width: 100px;
+	border-radius: 100%;
+}
+
+.logo .titulo {
+	transition: 0.3s ease-in-out;
+	margin-left: 7px;
+	font-size: 17px;
+}
+
+.logo:hover .titulo {
+	color: rgba(255, 255, 0, 0.871);
+}
+
+/* _____________________________________________________________ */
+
+/* CABEÇALHO MENU*/
+
+.navegacao .menu {
+	display: flex;
+}
+
+.navegacao .menu .item {
+	display: flex;
+	margin: 10px;
+	border: solid 1px;
+}
+
+.navegacao .menu .item a {
+	padding: 15px;
+	transition: 0.3s ease-in-out;
+}
+
+.navegacao .menu .item a:hover {
+	background-color: rgba(255, 255, 0, 0.871);
+}
+
+/* _____________________________________________________________*/
+
+/* GAME PLAY */
+
+.conteudos {
+	background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+	height: 100vh;
+}
+
+.conteudos img {
+	width: 500px;
+	height: 450px;
+}
+
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	gap: 150px;
+}
+
+.conteudo p {
+	color: rgba(255, 255, 0, 0.871);
+}
+
+.conteudo .descricao-1 {
+	font-size: 25px;
+}
+
+.conteudo .descricao-2 {
+	border: solid 2px;
+	padding-inline: 15px;
+	text-align: center;
+}
+
+
+.carousel {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-track {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 600px;
+	display: block;
+	object-fit: cover;
+}
+
+.carousel-prev,
+.carousel-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(27, 28, 26, 0.5);
+	color: rgb(255, 255, 255);
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.carousel-prev {
+	left: 10px;
+}
+
+.carousel-next {
+	right: 10px;
+}
+
+/* GAME PLAY */
+
+.players {
+	background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+	padding: 0px 0 70px;
+}
+
+.players .titulo {
+	color: rgba(255, 255, 0, 0.871);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 45px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.players .container-players {
+	background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.players .player {
+	max-width: 260px;
+	max-height: 500px;
+	position: relative;
+	display: none;
+}
+
+.players .player.ativo {
+	display: block;
+}
+
+.players .player img {
+	height: 100%;
+}
+
+.players .player h3 {
+	width: 100%;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: absolute;
+	bottom: 0;
+}
+
+.players .player .informacoes-player {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: 600;
+	opacity: 0;
+	transition: 0.3s;
+	padding: 20px;
+}
+
+.players .container-players .player:hover .informacoes-player {
+	opacity: 0.7;
+	background-color: #000;
+}
+
+.players .btn-mostrar-players {
+	background: none;
+	border: 2px solid #fff;
+	color: #fff;
+	width: 150px;
+	padding: 15px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+.players .btn-mostrar-players:hover {
+	background-color: rgba(255, 255, 0, 0.871);
+	transition: 0.5s;
+}
+
+z .players .btn-mostrar-players.remover {
+	display: none;
+}
+
+/* RODAPÉ */
+
+.rodape {
+	background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+	padding: 80px 0 20px 0;
+}
+
+.rodape .navegacao {
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodape .redes-sociais {
+	display: flex;
+}
+
+.rodape .redes-sociais a {
+	display: flex;
+	justify-content: center;
+	margin: 0 10px;
+	border: 2px solid #fff;
+	padding: 15px;
+	width: 65px;
+	border-radius: 50%;
+	transition: 0.3s ease-in-out;
+	font-size: 30px;
+}
+
+.rodape .redes-sociais a:hover {
+	background-color: rgba(255, 255, 0, 0.871);
+}
+
+.rodape .copyright {
+	margin-top: 70px;
+	text-align: center;
+}

@@ -1,0 +1,73 @@
+@media screen and (max-width: 500px) {
+    .cabecalho {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        padding: auto;
+        background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+    }
+
+    .menu {
+        position: relative;
+        right: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabecalho .logo {
+        display: flex;
+        position: relative;
+        left: 60px;
+    }
+
+    .conteudos {
+        background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+    }
+
+    .conteudos img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: -480px;
+    }
+
+    .conteudo {
+        gap: 400px;
+    }
+
+    .carousel {
+        background-color: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel img {
+        justify-content: center;
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .navegacao .logo {
+        display: flex;
+        position: relative;
+        left: 70px;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociais {
+        display: flex;
+        position: relative;
+        left: 20px;
+
+    }
+
+    .container-players {
+        background-image: url("../imagens/fundo\ preto\ pigmentado\ horizontal.jpg");
+    }
+}
